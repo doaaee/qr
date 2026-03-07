@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenLoop | Escanea y Prueba</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@800;900&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --teal-600: #00897B;
+            --teal-500: #009688;
+            --teal-100: #E0F2F1;
+            --teal-50: #F0F4F4;
+            --dark-grey: #374151;
+            --white: #FFFFFF;
+        }
+
+        body {
+            background-color: var(--teal-50);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: var(--dark-grey);
+            overflow: hidden;
+        }
+
+        .main-card {
+            background: var(--white);
+            padding: 60px;
+            border-radius: 50px;
+            box-shadow: 0 30px 80px rgba(0, 137, 123, 0.2);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            border: 1px solid #E5E7EB;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .logo-section i {
+            font-size: 40px;
+            color: var(--teal-600);
+        }
+
+        .logo-section h1 {
+            font-family: 'Outfit';
+            font-size: 45px;
+            margin: 0;
+            color: var(--teal-600);
+            letter-spacing: -2px;
+        }
+
+        .call-to-action {
+            font-family: 'Outfit';
+            font-size: 38px;
+            line-height: 1.1;
+            font-weight: 900;
+            color: var(--dark-grey);
+            margin-bottom: 40px;
+        }
+
+        .call-to-action span {
+            display: block;
+            color: var(--teal-500);
+            font-size: 48px;
+        }
+
+        .qr-wrapper {
+            background: var(--teal-100);
+            padding: 30px;
+            border-radius: 40px;
+            display: inline-block;
+            border: 2px solid var(--teal-600);
+            transition: transform 0.3s ease;
+        }
+
+        .qr-wrapper:hover {
+            transform: scale(1.02);
+        }
+
+        .qr-container {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .qr-container img {
+            display: block;
+            width: 320px; /* Tamaño optimizado para escaneo rápido */
+            height: 320px;
+            border-radius: 10px;
+        }
+
+        .footer-note {
+            margin-top: 40px;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #94A3B8;
+        }
+
+        /* Animación sutil de entrada */
+        .main-card {
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive para móviles */
+        @media (max-width: 480px) {
+            .call-to-action { font-size: 28px; }
+            .call-to-action span { font-size: 36px; }
+            .qr-container img { width: 220px; height: 220px; }
+            .main-card { padding: 40px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-card">
+        <div class="logo-section">
+            <i class="fa-solid fa-leaf"></i>
+            <h1>GreenLoop</h1>
+        </div>
+
+        <div class="call-to-action">
+            Escanea y prueba <span>GreenLoop</span>
+        </div>
+
+        <div class="qr-wrapper">
+            <div class="qr-container">
+                <img src="qr_app.png" alt="QR Demo App">
+            </div>
+        </div>
+
+        <div class="footer-note">Feria de las Ideas 2026</div>
+    </div>
+
+</body>
+</html>
