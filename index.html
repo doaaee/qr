@@ -32,16 +32,16 @@
 
         .main-card {
             background: var(--white);
-            padding: 50px 40px;
+            padding: 40px 20px; /* Reduced side padding to fill space */
             border-radius: 40px;
             text-align: center;
-            max-width: 550px;
-            width: 90%;
-            border: 4px solid var(--teal-600);
+            max-width: 600px; /* Increased width to reduce empty sides */
+            width: 95%; /* Occupies more screen/paper width */
+            border: 5px solid var(--teal-600);
             position: relative;
+            box-sizing: border-box;
         }
 
-        /* 6️⃣ FREEBIES STICKER: 15% smaller and better tilt */
         .sticker-badge {
             position: absolute;
             top: -15px; 
@@ -63,26 +63,25 @@
             align-items: center;
             justify-content: center;
             gap: 15px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .logo-section i {
-            font-size: 40px;
+            font-size: 45px;
             color: var(--teal-600);
         }
 
         .logo-section h1 {
             font-family: 'Outfit';
-            font-size: 45px;
+            font-size: 55px; /* Larger logo text */
             margin: 0;
             color: var(--teal-600);
             letter-spacing: -2px;
         }
 
-        /* 2️⃣ TEXT BREAK FIX: Everything in one line */
         .call-to-action {
             font-family: 'Outfit';
-            font-size: 25px; 
+            font-size: 28px; /* Bigger to fill the line */
             white-space: nowrap;
             font-weight: 900;
             color: var(--dark-grey);
@@ -95,30 +94,29 @@
         }
 
         .sub-text {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 700;
             color: var(--teal-600);
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             background: var(--teal-100);
             display: inline-block;
-            padding: 8px 20px;
+            padding: 10px 25px;
             border-radius: 12px;
         }
 
-        /* 3️⃣ QR BIGGER & PUSH TEXT */
         .qr-wrapper {
             background: var(--white);
             padding: 15px;
             border-radius: 30px;
             display: inline-block;
-            border: 5px dashed var(--teal-600);
+            border: 6px dashed var(--teal-600); /* Thicker border */
             margin-bottom: 10px;
         }
 
         .qr-container img {
             display: block;
-            width: 280px; 
-            height: 280px;
+            width: 320px; /* QR is now significantly bigger */
+            height: 320px;
             border-radius: 10px;
         }
 
@@ -126,26 +124,25 @@
             display: block;
             font-family: 'Outfit';
             font-weight: 800;
-            font-size: 18px;
+            font-size: 22px; /* More prominent call to action */
             color: var(--teal-600);
-            margin-top: 5px;
-            margin-bottom: 25px;
+            margin-top: 10px;
+            margin-bottom: 30px;
         }
 
-        /* 4️⃣ LOCATION FIX: Specific and bold */
         .footer-note {
-            margin-top: 10px;
-            font-size: 20px;
-            font-weight: 800;
+            font-size: 24px; /* Larger location for visibility */
+            font-weight: 900;
             font-family: 'Outfit';
             color: var(--dark-grey);
-            border-top: 2px solid var(--teal-100);
+            border-top: 3px solid var(--teal-100);
             padding-top: 20px;
+            margin: 0 20px;
         }
 
         @media print {
             .sticker-badge { -webkit-print-color-adjust: exact; }
-            .main-card { border: 4px solid #00897B !important; }
+            .main-card { border: 5px solid #00897B !important; }
         }
     </style>
 </head>
@@ -166,6 +163,8 @@
         <div class="sub-text">
             ¡Haciendo la sostenibilidad irresistible! ✨
         </div>
+
+        <br>
 
         <div class="qr-wrapper">
             <div class="qr-container">
